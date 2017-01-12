@@ -22,28 +22,26 @@ Hardware:
 ## Installation
 
 1. Get the code:
-```bash
-git clone https://github.com/stephanepoirier/arduino-adaptive-brightness.git
-```
+  ```bash
+  git clone https://github.com/stephanepoirier/arduino-adaptive-brightness.git
+  ```
+
 2. Install dependencies, for instance:
-```bash
-sudo pip install numpy pyserial
-sudo apt-get install xbacklight
-```
+  ```bash
+  sudo pip install numpy pyserial
+  sudo apt-get install xbacklight
+  ```
 
 3. Perform hardware setup:
   * Breadboard:
-  ![Arduino breadboard diagram][arduino_breadboard_diagram]
+    
+    <img src="../master/docs/layout_bb.png" alt="Arduino breadboard diagram" width="300">
   * Schematic diagram:
-  ![Arduino schematic diagram][arduino_schematic_diagram]
+    
+    <img src="../master/docs/layout_schem.png" alt="Arduino schematic diagram" width="300">
   * PCB:
-  ![Arduino PCB diagram][arduino_pcb_diagram]
-
-[arduino_breadboard_diagram]: ../raw/master/docs/layout_bb.png "Arduino breadboard diagram"
-
-[arduino_schematic_diagram]: ../raw/master/docs/layout_schem.png "Arduino schematic diagram"
-
-[arduino_pcb_diagram]: ../raw/master/docs/layout_schem.png "Arduino PCB diagram"
+    
+    <img src="../master/docs/layout_pcb.png" alt="Arduino PCB diagram" width="300">
 
 4. Open the Arduino sketch `./arduino/ArduinoAnalogReceiver/ArduinoAnalogReceiver.ino` and upload it to the Arduino.
 
@@ -51,7 +49,7 @@ sudo apt-get install xbacklight
 ## Usage
 
 1. Make sure the Arduino is connected to your PC via USB
-2. Run:
+2. Run (add `--help` argument for options):
 ```bash
 python ./src/main.py
 ```
